@@ -2,8 +2,7 @@
     
     session_start();
     $usuario_autenticado = false;
-    
-   
+
 
     $usuarios_app = array(
         array(
@@ -42,10 +41,11 @@
 
         if($usuario_autenticado){
             $_SESSION['autenticado'] = 'sim';
-            header('location: http://local.site/php/app-help-desk/view/home.php');
+            
+            header("location: ../view/home.php");
         }else{
             $_SESSION['autenticado'] = 'nao';
-            header('location: http://local.site/php/app-help-desk/index.php?login=erro');
+            header('location: ../index.php?login=erro');
             
         }
 ?>
