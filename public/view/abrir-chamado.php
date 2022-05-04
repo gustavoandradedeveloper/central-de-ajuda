@@ -1,5 +1,5 @@
 <?php
-  require_once('../controller/validador-acesso.php');
+  require_once('../../controller/validador-acesso.php');
 ?>
 <html>
   <head>
@@ -21,12 +21,12 @@
 
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="../view/home.php">
-        <img src="../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="../../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk  | <?=  $_SESSION['perfil_acesso']?>
       </a>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="../controller/logoff.php">Sair</a>
+          <a class="nav-link" href="../../controller/logoff.php">Sair</a>
         </li>
       </ul>
     </nav>

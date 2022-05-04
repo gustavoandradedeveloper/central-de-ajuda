@@ -42,7 +42,7 @@
         if($usuario_autenticado){
             $_SESSION['autenticado'] = 'sim';
             
-            header("location: ../view/home.php");
+            header("location: ../public/view/home.php");
         }else{
             $_SESSION['autenticado'] = 'nao';
             header('location: ../index.php?login=erro');

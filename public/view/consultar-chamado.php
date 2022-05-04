@@ -1,7 +1,7 @@
 <?php
-  require_once('../controller/validador-acesso.php');
+  require_once('../../controller/validador-acesso.php');
   if(isset($_SESSION['perfil_acesso']) && ($_SESSION['perfil_acesso'] == 'estagiario')){
-    header('location: http://local.site/php/app-help-desk/view/home.php');
+    header('location: http://local.site/meus-projetos/public/view/home.php');
  } 
 ?>
 <html>
@@ -23,12 +23,12 @@
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="../view/home.php">
-        <img src="../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="../../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk | <?=  $_SESSION['perfil_acesso']?>
       </a>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="../controller/logoff.php">Sair</a>
+          <a class="nav-link" href="../../controller/logoff.php">Sair</a>
         </li>
       </ul>
     </nav>
