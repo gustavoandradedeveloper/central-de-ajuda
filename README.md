@@ -1,2 +1,2 @@
 # central-de-ajuda
-Sistema de Central de Ajuda
+Sistema de Central de Ajuda.
